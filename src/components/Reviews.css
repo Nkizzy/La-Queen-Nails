@@ -1,0 +1,149 @@
+.reviews {
+  padding: 5rem 2rem;
+  background: var(--white);
+  position: relative;
+  z-index: 1;
+}
+
+.reviews-carousel-wrapper {
+  position: relative;
+  overflow: visible;
+  margin: 2rem 0;
+  padding: 0 80px;
+}
+
+.reviews-carousel-viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.reviews-carousel-container {
+  display: flex;
+  transition: transform 0.3s ease;
+  gap: 2rem;
+  will-change: transform;
+}
+
+.review-card {
+  background: var(--light-bg);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+  flex-shrink: 0;
+  width: calc(33.333% - 1.33rem);
+}
+
+.review-card:hover {
+  box-shadow: 0 8px 25px rgba(212, 165, 116, 0.15);
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-arrow:hover:not(:disabled) {
+  background: var(--secondary-color);
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 6px 20px rgba(212, 165, 116, 0.4);
+}
+
+.carousel-arrow:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.carousel-arrow-left {
+  left: 0;
+}
+
+.carousel-arrow-right {
+  right: 0;
+}
+
+.review-rating {
+  display: flex;
+  gap: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.star {
+  color: #ffc107;
+  font-size: 1.2rem;
+}
+
+.review-text {
+  color: var(--text-light);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.review-author {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(212, 165, 116, 0.2);
+}
+
+.review-author strong {
+  color: var(--text-dark);
+  font-size: 1rem;
+}
+
+.review-date {
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .reviews {
+    padding: 3rem 1rem;
+  }
+
+  .reviews-carousel-wrapper {
+    margin: 1.5rem 0;
+    padding: 0 60px;
+  }
+
+  .reviews-carousel-container {
+    gap: 1.5rem;
+  }
+
+  .review-card {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .carousel-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .carousel-arrow-left {
+    left: 0;
+  }
+
+  .carousel-arrow-right {
+    right: 0;
+  }
+}
+

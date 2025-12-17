@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #d4a574;
+  --secondary-color: #8b6f47;
+  --accent-color: #f5e6d3;
+  --text-dark: #2c2c2c;
+  --text-light: #666;
+  --white: #ffffff;
+  --light-bg: #fafafa;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+.section-title,
+.section-subtitle,
+.hero-title,
+.hero-subtitle,
+.service-title,
+.nav-logo h2,
+.social-header h3,
+.info-card h3,
+.map-info h3,
+.map-hours h4,
+.footer-section h3,
+.footer-section h4 {
+  font-family: 'Playfair Display', serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
