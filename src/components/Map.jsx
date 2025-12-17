@@ -14,7 +14,7 @@ const Map = () => {
         <div className="map-container">
           <div className="map-wrapper">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2807.512290839454!2d-77.61123192398078!3d43.08890897113451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d14bd47aaa56a5%3A0xbf1993fd8b182f11!2sLa%20Queen%20Nails!5e1!3m2!1sen!2sus!4v1765167580217!5m2!1sen!2sus" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d747.9623517460956!2d-76.04440433452697!3d43.02867096791386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d98da363865e6d%3A0x5c77e63c9fa72c1d!2sLa%20Queen%20Nails!5e1!3m2!1sen!2sus!4v1765937552035!5m2!1sen!2sus" 
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 
